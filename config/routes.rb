@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  root  'users#index' 
+  root  'feeds#index' 
+
+
+
+  
+  get '*not_found' => 'application#routing_error'
+
 
 
 
