@@ -4,20 +4,14 @@ Rails.application.routes.draw do
 
 
 
+
   
-  get '*not_found' => 'application#routing_error'
-
-
-
-
-
   resources :feeds
   # get 'sessions/new'
   resources :users, only: [:new, :create, :show]
   resources :sessions, only: [:new, :create, :destroy]
-
-
-
-
+  
+  
+  get '*not_found' => 'application#routing_error'
 
 end

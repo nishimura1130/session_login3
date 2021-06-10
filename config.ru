@@ -4,5 +4,3 @@ require_relative 'config/environment'
 run Rails.application
 
 
-get  '*path', controller: 'application', action: 'render_404'
-post '*path', controller: 'application', action: 'render_404'
